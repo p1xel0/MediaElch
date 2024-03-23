@@ -247,7 +247,7 @@ QString TheTvDbApi::seasonOrderToUrlArg(SeasonOrder order) const
 {
     switch (order) {
     case SeasonOrder::Dvd: return "dvdSeason";
-    case SeasonOrder::Aired: return "airedSeason";
+    case SeasonOrder::Aired: return "dvdSeason";
     }
     qCCritical(generic) << "[TheTvDbApi] Unhandled SeasonOrder case!";
     return "airedSeason";
